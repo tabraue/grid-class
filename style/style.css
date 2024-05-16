@@ -1,0 +1,63 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #86bebe;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+/*     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
+    grid-template-areas: "one  two   two      two    . ."
+                         "one  two   two      two    . ."
+                         "one  three three    .    . ."
+                         "one  four  four    four  . ."
+                         "one   .     .      five  five ."
+                         "six   .     .       .    . ."
+                         "six   .     .       .    . .";
+    height: 100vh;
+/*     column-gap: 15px;
+    row-gap: 15px; */
+}
+
+.box {
+/*     width: 150px;
+    height: 150px; */
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.one {
+    background-color: #8751a7;
+    grid-area: one;
+    /* grid-area: 2 / 2 / 3 / 5; */
+}
+
+.two {
+    background-color: #538b41;
+    grid-area: two;
+}
+
+.three {
+    background-color: #a83378;
+    grid-area: three;
+}
+
+.four {
+    background-color: #ddd455;
+    grid-area: four;
+}
+
+.five {
+    background-color: #26619c;
+    grid-area: five;
+    
+}
+
+.six {
+    background-color: #32a885;
+    grid-area: six;
+}
